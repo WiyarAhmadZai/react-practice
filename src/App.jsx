@@ -15,9 +15,9 @@ function App() {
       <Title/>
       <Desctiption/>
       <Sum/>
-      <ProductTitle title="this is the first product title"/>
-      <ProductTitle title="this is the second product title"/>
-      <ProductTitle title="this is the third product title"/>
+      <ProductTitle title="this is the first product title" name="product one"/>
+      <ProductTitle title="this is the second product title" name="product two"/>
+      <ProductTitle title="this is the third product title" name="product three"/>
     </>
   )
 }
