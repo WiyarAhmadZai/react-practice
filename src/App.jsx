@@ -9,6 +9,7 @@ function Desctiption(){
 
 function App() {
 let option1 =["feature one", "feature two", "feature three"]
+let option2 ={a: "feature A", b: "feature B", c: "feature C"}
   return (
     <>
 
