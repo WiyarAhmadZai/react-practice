@@ -8,16 +8,13 @@ function Desctiption(){
 }
 
 function App() {
-
+let option1 =["feature one", "feature two", "feature three"]
   return (
     <>
-      <h1>hello this is me wiyar  </h1>
-      <Title/>
-      <Desctiption/>
-      <Sum/>
-      <ProductTitle title="this is the first product title" name="product one"/>
-      <ProductTitle title="this is the second product title" name="product two"/>
-      <ProductTitle title="this is the third product title" name="product three"/>
+
+      <ProductTitle title="this is the first product title" name="product one" features1={option1}/>
+      <ProductTitle title="this is the second product title" name="product two" features1={option1}/>
+      <ProductTitle title="this is the third product title" name="product three" features1={option1}/>
     </>
   )
 }
