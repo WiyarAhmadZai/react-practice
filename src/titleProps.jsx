@@ -1,17 +1,17 @@
 function ProductTitle({title, name, features1, feature2, price}) {
     const list = features1.map((feature)=> <li style={{listStyle:"none"}} key={feature}>{feature}</li>)
 
-    let isDiscounted = price>20000? "10% Discount Applied": "No Discount";
+    // let isDiscounted = price>20000? "10% Discount Applied": "No Discount";
 
   return (
     <>
-    <div style={{display: "flex", gap: '1rem', alignItems: "center", border:"1px solid white", margin:"1rem", padding:"0.3rem 0.9rem"}}>
+    <div style={{display: "flex", gap: '1rem', alignItems: "center", border:"1px solid white", margin:"1rem", padding:"0.3rem 0.9rem", justifyContent:"center", flexDirection:"row"}}>
         <p>{title}</p>
     <h5>I am: {name}</h5>
     <h6>Feature: {list}</h6>
     <h6>Feature2: {feature2}</h6>
     <h6>Price: {price}</h6>
-    <h6>{isDiscounted}</h6>
+    {price>20000 ? <h6 style={{color: "green"}}>10% Discount Applied</h6> : <h6 style={{color: "red"}}>No Discount</h6>}
     </div>
     </>
   )
