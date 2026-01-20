@@ -1,8 +1,9 @@
-function ProductTitle(props) {
+function ProductTitle({title, name, features1}) {
   return (
     <>
-    <p>{props.title}</p>;
-    <h5>My name is: {props.name}</h5>
+    <p>{title}</p>;
+    <h5>My name is: {name}</h5>
+    <h6>Feature: {features1}</h6>
     </>
   )
 }
