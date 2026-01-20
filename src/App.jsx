@@ -15,6 +15,7 @@ let option1 =["feature one", "feature two", "feature three"]
       <ProductTitle title="this is the first product title" name="product one" features1={option1}/>
       <ProductTitle title="this is the second product title" name="product two" features1={option1}/>
       <ProductTitle title="this is the third product title" name="product three" features1={option1}/>
+      <ProductTitle title="this is the third product title" name="product four" features1={option1}/>
     </>
   )
 }
